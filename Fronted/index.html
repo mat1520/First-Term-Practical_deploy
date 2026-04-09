@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Gaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Quantum Gaming</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Categorias/procesadores.html"><img src="assets/icons/cpu.svg" alt="CPU" class="nav-icon">
+                    Procesadores</a></li>
+            <li><a href="Categorias/tarjetas-graficas.html"><img src="assets/icons/gpu.svg" alt="GPU" class="nav-icon">
+                    Tarjetas Gráficas</a></li>
+            <li><a href="Categorias/placas-madre.html"><img src="assets/icons/mother.svg" alt="Motherboard"
+                        class="nav-icon"> Placas Madre</a></li>
+            <li><a href="Categorias/cases.html"><img src="assets/icons/cases.svg" alt="Cases" class="nav-icon"> Cases y
+                    Gabinetes</a></li>
+            <li><a href="Categorias/fuentes-poder.html"><img src="assets/icons/power.svg" alt="Fuentes"
+                        class="nav-icon"> Fuentes de Poder</a></li>
+            <li class="nav-right"><a href="usuarios/login.html" class="login-btn">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <header>
+                <h2>Por Qué Elegirnos</h2>
+            </header>
+            <p>En Quantum Gaming, armamos la configuración ideal para tu presupuesto. Contamos con componentes de última
+                generación cuidadosamente seleccionados y soporte técnico especializado, todo lo que necesitas para tu
+                siguiente build.</p>
+            <ul class="features-list">
+                <li><strong>Garantía Oficial:</strong> 1 a 3 años según el fabricante.</li>
+                <li><strong>Envíos:</strong> A todo el país seguros y confiables.</li>
+                <li><strong>Asesoría:</strong> Te guiamos para elegir las piezas correctas y evitar cuellos de botella.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <article>
+                <header>
+                    <h2>Producto Destacado</h2>
+                </header>
+                <figure>
+                    <img id="featured-image" src="" alt="Producto destacado" />
+                    <figcaption>
+                        <h3 id="featured-title">NVIDIA GeForce RTX 5090</h3>
+                        <p id="featured-description">Experimenta el rendimiento extremo. Diseñada para los gamers y
+                            creadores más exigentes.</p>
+                        <p id="featured-price"></p>
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section>
+            <header>
+                <h2>Lo Que Dicen Nuestros Clientes</h2>
+            </header>
+
+            <section class="testimonials-grid" aria-label="Testimonios de clientes">
+                <article class="testimonial-card">
+                    <header>
+                        <h3>Calidad y Rapidez</h3>
+                    </header>
+                    <blockquote>
+                        <p>"Excelente servicio, mi PC llegó ensamblada perfectamente y en tiempo récord. El cable
+                            management es impecable."</p>
+                    </blockquote>
+                    <footer>
+                        <cite>— <time datetime="2026-02-15">Febrero 2026</time>, Marcos D.</cite>
+                    </footer>
+                </article>
+
+                <article class="testimonial-card">
+                    <header>
+                        <h3>Asesoría de 10</h3>
+                    </header>
+                    <blockquote>
+                        <p>"Me ayudaron a escoger los mejores componentes para streamear sin gastar una locura de
+                            dinero. Su equipo técnico sí sabe de hardware."</p>
+                    </blockquote>
+                    <footer>
+                        <cite>— <time datetime="2026-03-01">Marzo 2026</time>, Sofía L.</cite>
+                    </footer>
+                </article>
+            </section>
+        </section>
+
+        <section>
+            <header>
+                <h2>Productos</h2>
+            </header>
+            <section id="product-container" aria-label="Lista de productos"></section>
+            <section aria-labelledby="contacto-titulo">
+                <header>
+                    <h2 id="contacto-titulo">Contáctanos</h2>
+                </header>
+                <form action="https://formsubmit.co/arielmelo1520@hotmail.com" method="POST" class="contact-card">
+                    <input type="hidden" name="_subject" value="Nuevo Mensaje - Quantum Gaming">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:8000/index.html">
+                    <p class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ariel Melo" required>
+                    </p>
+                    <p class="form-group">
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="arielmelo@gmail.com" required>
+                    </p>
+                    <p class="form-group">
+                        <label for="celular">Celular</label>
+                        <input type="tel" id="celular" name="celular" placeholder="0991234567" required>
+                    </p>
+                    <p class="form-group msg-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué te ayudamos?"
+                            required></textarea>
+                    </p>
+                    <button type="submit" id="contact-submit">Enviar Mensaje</button>
+                </form>
+            </section>
+    </main>
+    <footer>
+        <p>Quantum Gaming. mat1520.</p>
+        <p>Contacto: info@quantumgaming.ec</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
