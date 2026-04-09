@@ -1,5 +1,5 @@
-const URL = "http://127.0.0.1:8000/api/products/"
-const AUTH_URL = "http://127.0.0.1:8000/api/users/"
+const URL = "https://first-term-practicaldeploy-production.up.railway.app/api/products/"
+const AUTH_URL = "https://first-term-practicaldeploy-production.up.railway.app/api/users/"
 
 // auth login y registro
 const authForm = document.getElementById("auth-form")
